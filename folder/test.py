@@ -8,7 +8,7 @@ from kubernetes.client import models as k8s
 
 def test():
   import os
-  os.system("nvidia-smi")
+  return os.system("nvidia-smi")
 
 with DAG(
    dag_id="dagger",
