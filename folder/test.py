@@ -25,7 +25,6 @@ with DAG(
                 containers=[
                   k8s.V1Container(
                     name="base",
-                    image="ubuntu:24.04",
                     resources=k8s.V1ResourceRequirements(
                       limits={
                         "nvidia.com/gpu.shared": "1"
