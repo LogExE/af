@@ -30,7 +30,7 @@ with DAG(
                       }
                     )
                   )
-                ]
+                ],
                 node_selector={
                   "nvidia.com/gpu.product": "NVIDIA-GeForce-GTX-1060-6GB"
                 }
