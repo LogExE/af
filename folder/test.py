@@ -4,6 +4,8 @@ import datetime
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 
+from kubernetes.client import models as k8s
+
 def test():
   import os
   os.system("nvidia-smi")
