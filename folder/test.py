@@ -28,7 +28,7 @@ with DAG(
                     image="ubuntu:24.04",
                     resources=k8s.V1ResourceRequirements(
                       limits={
-                        "nvidia.com/gpu": "1"
+                        "nvidia.com/gpu.shared": "1"
                       }
                     )
                   )
